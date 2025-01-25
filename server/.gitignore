@@ -8,7 +8,11 @@
 .settings
 bin
 build
-target
+# target
+target/classes
+target/maven-*
+target/test-classes
+target/surefire-reports
 dependency-reduced-pom.xml
 *.sublime-*
 /scratch
