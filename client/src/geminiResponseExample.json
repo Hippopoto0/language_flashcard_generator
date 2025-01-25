@@ -1,0 +1,25 @@
+{
+    "language": "Spanish",
+    "gemini_response": {
+        "candidates": [
+            {
+                "content": {
+                    "parts": [
+                        {
+                            "text": "```csv\nEnglish|Spanish|Notes\nWhat is your name?|¿Cómo te llamas?|Informal, singular \"you\"\nMy name is [user's name].|Me llamo [user's name].|Informal, introduces yourself\nNice to meet you.|Mucho gusto.|Common greeting\nHow are you?|¿Cómo estás?|Informal, singular \"you\"\nI am fine, thank you.|Bien, gracias.|Standard response\nWhere are you from?|¿De dónde eres?|Asks origin\nI am from [user's country].|Soy de [user's country].|States origin\nWhat do you do?|¿Qué haces?|Informal, asks about occupation\nI am a [user's profession].|Soy [user's profession].|States occupation\nWhat is your favourite food?|¿Cuál es tu comida favorita?|Informal, singular \"you\"\nMy favourite food is [user's favourite food].|Mi comida favorita es [user's favourite food].|States favourite food\nI like [user's hobby].|Me gusta [user's hobby].|Expresses liking\nDo you speak English?|¿Hablas inglés?|Asks about English proficiency\nYes, I speak English.|Sí, hablo inglés.|Confirms English proficiency\nThank you.|Gracias.|Expresses gratitude\nYou're welcome.|De nada.|Standard response to thanks\nGoodbye.|Adiós.|Common farewell\nSee you later.|Hasta luego.|Common farewell\nHave a nice day!|¡Que tengas un buen día!|Common farewell\nI love [user's favourite thing].|Me encanta [user's favourite thing].|Expresses strong liking\n\n\nI went to the park.|Fui al parque.|Past tense, first person\nYou will eat dinner.|Comerás la cena.|Future tense, second person\nShe is singing a song.|Ella está cantando una canción.|Present tense, third person\nWe played football yesterday.|Jugamos al fútbol ayer.|Past tense, first person plural\nThey will travel to Spain.|Ellos viajarán a España.|Future tense, third person plural\nHe bought a new car.|Él compró un coche nuevo.|Past tense, third person\nI will study tomorrow.|Estudiaré mañana.|Future tense, first person\nYou are very kind.|Eres muy amable.|Present tense, second person\nShe went to the cinema.|Ella fue al cine.|Past tense, third person\nThey are learning Spanish.|Ellos están aprendiendo español.|Present tense, third person plural\nHe will visit his family.|Él visitará a su familia.|Future tense, third person\nI am learning a new language.|Estoy aprendiendo un nuevo idioma.|Present tense, first person\nYou ate all the cake!|¡Te comiste todo el pastel!|Past tense, second person\nHe works in a hospital.|Él trabaja en un hospital.|Present tense, third person\nWe will go to the beach.|Iremos a la playa.|Future tense, first person plural\nThey played music all night.|Ellos tocaron música toda la noche.|Past tense, third person plural\nShe will finish her work soon.|Ella terminará su trabajo pronto.|Future tense, third person\nI ate a delicious meal.|Comí una comida deliciosa.|Past tense, first person\n\n```\n"
+                        }
+                    ],
+                    "role": "model"
+                },
+                "finishReason": "STOP",
+                "avgLogprobs": -0.114228715112199
+            }
+        ],
+        "usageMetadata": {
+            "promptTokenCount": 114,
+            "candidatesTokenCount": 693,
+            "totalTokenCount": 807
+        },
+        "modelVersion": "gemini-1.5-flash"
+    }
+}
