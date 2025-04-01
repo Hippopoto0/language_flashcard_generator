@@ -64,25 +64,29 @@ public class HelloController {
     }
 
     private String callGeminiApi(String prompt) {
+        String apiKey = System.getenv("GEMINI_API_KEY");
+        if (apiKey == null || apiKey.isEmpty()) {
+            return "Error: GEMINI_API_KEY environment variable not set.";
+        }
         try {
             // Construct the request body
             String requestBody = """
-                {
-                  "contents": [{
-                    "parts": [{"text": "%s"}]
-                  }]
-                }
-                """.formatted(prompt);
+                    {
+                      "contents": [{
+                        "parts": [{"text": "%s"}]
+                      }]
+                    }
+                    """.formatted(prompt);
 
             // Create the HttpClient
             HttpClient client = HttpClient.newHttpClient();
 
             // Create the POST request
             HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key="+"AIzaSyAlKCDo8G-67TRFC6wifMarwJSle44g9vw"))
-                .header("Content-Type", "application/json")
-                .POST(HttpRequest.BodyPublishers.ofString(requestBody))
-                .build();
+                    .uri(URI.create("https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=" + apiKey))
+                    .header("Content-Type", "application/json")
+                    .POST(HttpRequest.BodyPublishers.ofString(requestBody))
+                    .build();
 
             // Send the request and get the response
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
